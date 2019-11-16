@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat:400,900&display=swap');
 /*RESET CSS*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,19 +45,20 @@ table {
 }
 /*BASIC STYLE*/
 body {
-	font-style: "Helvetica", sans-serif;
+	/*font-style: "Montserrat", sans-serif;*/
 }
 .capslock {
 	text-transform: uppercase;
 }
 /*HEADER*/
 .page-header {
-	border: 1px solid #000;
+	background: #2c3e50;
 }
 .page-header-nav {
 	display: inline-flex;
 	justify-content: space-between;
 	width: 100%	;
+	align-items: center;
 }
 .header-nav-items-left {
 	justify-content: flex-start;
@@ -69,4 +71,19 @@ body {
 }
 .header-nav-item-right{
 	padding-right: 10px;
+}
+.item {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 900;
+	font-family: "Montserrat", sans-serif;
+}
+.header-nav-items-left>li>a {
+	font-size: 20px;
+}
+.header-nav-items-right>li>a {
+	font-size: 14px;
+}
+.page-header-nav>ul>li>a:hover {
+	color: #18bc9c;
 }
